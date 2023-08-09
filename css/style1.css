@@ -1,0 +1,140 @@
+main {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+#click-me-container {
+  background-color: aquamarine;
+  width: fit-content;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 15px;
+  position: relative;
+
+  /* animation-name: spining-div;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: linear; */
+}
+
+.spin-animation {
+  animation-name: spining-div;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes spining-div {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#click-me-container :hover {
+  cursor: crosshair;
+}
+
+#black-container {
+  background-color: black;
+  width: 70%;
+  height: 500px;
+  margin-left: 100px;
+}
+
+#startingEl {
+  background-color: chartreuse;
+  margin-left: 35%;
+  width: fit-content;
+}
+
+#startingEl:hover {
+  cursor: default;
+  background-color: blueviolet;
+  width: fit-content;
+}
+
+#score-board-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  width: 200px;
+  height: 500px;
+  background-color: hsla(231, 73%, 51%, 0.986);
+}
+
+#clicks-to-next {
+  background-color: #e0e0e0;
+  height: 100px;
+  width: 200px;
+  font-size: 25px;
+  text-align: center;
+}
+
+#score {
+  background-color: #e0e0e0;
+  height: 100px;
+  width: 200px;
+  font-size: 25px;
+  text-align: center;
+}
+
+#level {
+  background-color: #e0e0e0;
+  height: 100px;
+  width: 200px;
+  font-size: 25px;
+  text-align: center;
+}
+
+#missed-clicks {
+  background-color: #e0e0e0;
+  height: 100px;
+  width: 200px;
+  font-size: 25px;
+  text-align: center;
+}
+
+#timer {
+  background-color: #e0e0e0;
+  height: 100px;
+  width: 200px;
+  font-size: 25px;
+  text-align: center;
+}
+
+#leader-board {
+  overflow: auto;
+  background-color: #c21616a2;
+  height: 100px;
+  width: 200px;
+  font-size: 25px;
+  text-align: center;
+}
+
+span {
+  color: blue;
+}
+
+#start-the-game-btn {
+  background-color: burlywood;
+  padding: 15px;
+  position: absolute;
+  top: 15px;
+  left: 250px;
+  font-size: 17px;
+  border-radius: 15px;
+
+  
+}
+
+
+#start-the-game-btn:hover{
+background-color: blue;
+cursor: pointer;
+}
+

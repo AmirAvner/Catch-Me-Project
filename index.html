@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style1.css" />
+    <script src="./js/main.js" defer></script>
+    <title>Catch Me</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="startingEl">CATCH ME IF YOU CAN!</h1> <!--is this correct? why id, not class? id name- is good practice? why put the h1 in an header?-->
+      <button id="start-the-game-btn">Start</button>
+      
+    </header>
+
+    <main>
+      <div id="black-container">
+        <div id="click-me-container">
+          <p>Click Me!</p>
+        </div>
+      </div>
+      <aside id="score-board-container">
+        <div id="score">score: <span>0</span></div>
+        <div id="clicks-to-next">clicks to next level: <span>10</span></div>
+        <div id="level">level: <span>1</span></div>
+        <div id="missed-clicks">missed clicks: <span>0</span></div>
+        <div id="timer">timer: <span>60</span></div>
+        <div id="leader-board">High Scores:</div>
+      </aside>
+    </main>
+  </body>
+</html>
